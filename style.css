@@ -101,6 +101,28 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* ---------------------------------------------------------------- */
+/* NEWS SECTION & IMAGE FIX */
+/* ---------------------------------------------------------------- */
+
+/* Style for the news image */
+#news img {
+    display: block; /* Make the image a block-level element */
+    margin: 0px auto 0 auto; /* Center it horizontally: top margin 20px, auto left/right, 0 bottom margin */
+    max-width: 250px; /* Increased max-width slightly for better visibility if desired, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* FIX: Contains the floated image within the #news section to prevent overlap with #CV */
+#news {
+    overflow: auto; 
+}
+
+/* ---------------------------------------------------------------- */
+/* Education and Service Sections */
+/* ---------------------------------------------------------------- */
+
 /* Education Section Styling */
 #education {
   background-color: #fff;
@@ -115,29 +137,7 @@ footer a:hover {
   line-height: 1.5;
 }
 
-/* Service Entries */
-.service-entry {
-  margin-bottom: 15px;
-  padding-left: 15px;
-  border-left: 4px solid #005a9c;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.service-entry h3 {
-  margin: 0 0 5px 0;
-  color: #003f6b;
-  font-size: 1.1em;
-}
-
-.service-entry p {
-  margin: 0;
-  color: #444;
-  font-size: 0.95em;
-}
-
-/* Interactive collapsible styling */
+/* Service Entries (Consolidated) */
 .service-entry {
   margin-bottom: 10px;
   border: 1px solid #ddd;
